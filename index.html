@@ -5,75 +5,76 @@
 	<meta charset = "utf-8"> 
 	<meta name = "viewport" content"width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style-2.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	
 
 
-<style>
-.jumbotron { 
-    background-color: #2B547E; /*grayish blue*/
-    color: #ffffff;
-}
-
- /* Add a dark background color with a little bit see-through */
-.navbar {
-    margin-bottom: 0;
-    background-color: #2B547E;
-    border: 0;
-    font-size: 11px !important;
-    letter-spacing: 4px;
-    opacity:0.9;
-    padding-top: 10px;
-    padding-right: 50px;
-    padding-bottom: 0px;
-    padding-left: 50px;
-}
-
-/* Add a gray color to all navbar links */
-.navbar li a, .navbar .navbar-brand {
-    color: #d5d5d5 !important;
-}
-
-/* On hover, the links will turn white */
-.navbar-nav li a:hover {
-    color: #fff !important;
-}
-
-/* The active link */
-.navbar-nav li.active a {
-    color: #fff !important;
-    background-color:#29292c !important;
-}
-
-/* Remove border color from the collapsible button */
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-}
-
-/* Dropdown */
-.open .dropdown-toggle {
-    color: #fff ;
-    background-color: #555 !important;
-}
-
-/* Dropdown links */
-.dropdown-menu li a {
-    color: #000 !important;
-}
-
-/* On hover, the dropdown links will turn red */
-.dropdown-menu li a:hover {
-    background-color: red !important;
-}
-
-
-</style>
-
 
 	</head>
 
 <body> 
+   <section class="testimonial">
+            
+                <div class="testimonial-overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="carousel-testimonial" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators --> 
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-testimonial" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel-testimonial" data-slide-to="1"></li>
+                                        <li data-target="#carousel-testimonial" data-slide-to="2"></li>
+                                    </ol>
+                                    
+                                    <!-- Wrapper for slides --> 
+                                    <div class="carousel-inner">
+                                        
+                                        <!-- Item 01 --> 
+                                        <div class="item active text-center" style="padding-top: 100px; padding-bottom: 55px; ">
+                                            <h1 style="color: #fff; font-size:63px;">Integrated Systems for Information Processing Laboratory</h1>
+                                            <h4 style="color: #fff; padding-top: 60px; padding-bottom:24px; font-size:30px;"> Design and implementation of signal processing systems, and custom computer architectures.  </h4> 
+                                            
+                                            
+                                        </div>
+
+                                        
+                                        <!-- Item 02 --> 
+                                        <div class="item text-center">
+                                            <img src="images/img-1.jpg" alt="testimonial" class="center-block" height="300" width="400">
+                                            
+                                            <div class="testimonial-caption">
+                                                <h2> ICAA's best paper award </h2>
+                                                <h4><span> Ali Hashemi and Carlo Condo win the Best Student Paper Award at the 2016 IEEE International Symposium on Circuits and Systems (ISCAS)</span></h4>
+                                                <p>"Their paper, "Matrix Reordering for Efficient List Sphere Decoding of Polar Codes", proposes a technique for improving the trade-off between error correction performance and hardware complexity for the List-SD algorithm."</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Item 03 --> 
+                                        <div class="item text-center">
+                                            <img src="images/client-03.jpg" alt="testimonial" class="center-block">
+                                            
+                                            <div class="testimonial-caption">
+                                                <h2> Jim So</h2>
+                                                <h4><span> Assistant Manager, </span>Gidfo</h4>
+                                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."</p>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                            
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                </div>
+            </section>
 
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="navbar-header">
@@ -93,37 +94,6 @@
     </div>
 </nav>
 
-
-
-<div class="jumbotron text-center">
-
-	<h1>Integrated Systems for Information Processing Laboratory</h1>
-	<p> Design and implementation of signal processing systems, and custom computer architectures.  <div id="who_we_are"></div></div> </p> 
-</div>
-
-<style>
-.bg-orange {
-    background-color: #ffffff;
-}
-</style>
-
-<style>
-.bg-grey {
-    background-color: #f6f6f6;
-}
-</style>
-
-<style>
-.jumbotron {
-    background-color: #2B547E; /*grayish blue*/
-    color: #fff;
-    padding: 100px 25px;
-}
-
-.container-fluid {
-    padding: 60px 50px;
-}
-</style>
 
 
 
@@ -424,7 +394,21 @@
 
 
 
-
+ <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <!-- Bx Slider JS -->
+        <script src="js/jquery.bxslider.min.js"></script>
+        
+        <!-- Add JS counter lib -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        
+        <!-- Add wow js lib -->
+        <script src="js/wow.min.js"></script>
+      
+        <!-- Custom Js -->
+        <script src="js/custom.js"></script>
 </body>
 </html>
 
