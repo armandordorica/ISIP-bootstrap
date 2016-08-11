@@ -1,424 +1,441 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title> Integrated Systems for Information Processing Laboratory </title>
-	<meta charset = "utf-8"> 
-	<meta name = "viewport" content"width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/style-2.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    	<title> Integrated Systems for Information Processing Laboratory </title>
+    	<meta charset = "utf-8"> 
+    	<meta name = "viewport" content"width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/style-2.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <script src="http://maps.googleapis.com/maps/api/js"></script>
+      <script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
 
 
+  <script>
+  var myCenter=new google.maps.LatLng(45.506053, -73.576099);
+  45.5052266,-73.5786621
 
-	</head>
+  function initialize()
+  {
+  var mapProp = {
+    center:myCenter,
+    zoom:15,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
 
-<body> 
-   <section class="testimonial">
-            
-                <div class="testimonial-overlay">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div id="carousel-testimonial" class="carousel slide" data-ride="carousel">
-                                    <!-- Indicators --> 
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carousel-testimonial" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carousel-testimonial" data-slide-to="1"></li>
-                                        <li data-target="#carousel-testimonial" data-slide-to="2"></li>
-                                    </ol>
-                                    
-                                    <!-- Wrapper for slides --> 
-                                    <div class="carousel-inner">
-                                        
-                                        <!-- Item 01 --> 
-                                        <div class="item active text-center" style="padding-top: 100px; padding-bottom: 55px; ">
-                                            <h1 style="color: #fff; font-size:63px;">Integrated Systems for Information Processing Laboratory</h1>
-                                            <h4 style="color: #fff; padding-top: 60px; padding-bottom:24px; font-size:30px;"> Design and implementation of signal processing systems, and custom computer architectures.  </h4> 
-                                            
-                                            
-                                        </div>
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-                                        
-                                        <!-- Item 02 --> 
-                                        <div class="item text-center">
-                                            <img src="images/img-1.jpg" alt="testimonial" class="center-block" height="300" width="400">
-                                            
-                                            <div class="testimonial-caption">
-                                                <h2> ICAA's best paper award </h2>
-                                                <h4><span> Ali Hashemi and Carlo Condo win the Best Student Paper Award at the 2016 IEEE International Symposium on Circuits and Systems (ISCAS)</span></h4>
-                                                <p>"Their paper, "Matrix Reordering for Efficient List Sphere Decoding of Polar Codes", proposes a technique for improving the trade-off between error correction performance and hardware complexity for the List-SD algorithm."</p>
-                                            </div>
-                                        </div>
-                                        
-                                          <!-- Item 02 --> 
-                                        <div class="item text-center">
-                                            <img src="images/img-2.jpg" alt="testimonial" class="center-block" height="300" width="400">
-                                            
-                                            <div class="testimonial-caption" style="padding-bottom: 39px;">
-                                                <h2> Gabi's PhD Defense </h2>
-                                              
-                                                <p style="padding-bottom: 32x;">"Congratulations to Gabi Sarkis for successfully defending his PhD thesis, <strong><i>Efficient Encoders and Decoders for Polar Codes: Algorithms and Implementations.</i></strong>"" </p>
-                                            </div>
-                                        </div>
-                                        <!-- Item 03 -->
+  var marker=new google.maps.Marker({
+    position:myCenter,
+    });
 
-                                         <div class="item text-center">
-                                            <img src="images/img-2.jpg" alt="testimonial" class="center-block" height="300" width="400">
-                                            
-                                            <div class="testimonial-caption" style="padding-bottom: 39px;">
-                                                <h2> Gabi's PhD Defense </h2>
-                                              
-                                                <p style="padding-bottom: 32x;">"Congratulations to Gabi Sarkis for successfully defending his PhD thesis, <strong><i>Efficient Encoders and Decoders for Polar Codes: Algorithms and Implementations.</i></strong>"" </p>
-                                            </div>
-                                        </div> 
-                                        
-                                    </div>
-                            
-                                
-                            </div>
-                        </div>
+  marker.setMap(map);
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+
+    </head>
+
+    <body> 
+     
+     <section class="testimonial">
+
+      <div class="testimonial-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="carousel-testimonial" class="carousel slide" data-ride="carousel">
+                <!-- Indicators --> 
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-testimonial" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-testimonial" data-slide-to="1"></li>
+                  <li data-target="#carousel-testimonial" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides --> 
+                <div class="carousel-inner">
+
+                  <!-- Item 01 --> 
+                  <div class="item active text-center" style="padding-top: 100px; padding-bottom: 55px; ">
+                    <h1 style="color: #fff; font-size:63px;">Integrated Systems for Information Processing Laboratory</h1>
+                    <h4 style="color: #fff; padding-top: 60px; padding-bottom:24px; font-size:30px;"> Design and implementation of signal processing systems, and custom computer architectures.  </h4> 
+
+
+                  </div>
+
+
+                  <!-- Item 02 --> 
+                  <div class="item text-center">
+                    <img src="images/img-1.jpg" alt="testimonial" class="center-block" height="300" width="400">
+
+                    <div class="testimonial-caption">
+                      <h2> ICAA's best paper award </h2>
+                      <h4><span> Ali Hashemi and Carlo Condo win the Best Student Paper Award at the 2016 IEEE International Symposium on Circuits and Systems (ISCAS)</span></h4>
+                      <p>"Their paper, "Matrix Reordering for Efficient List Sphere Decoding of Polar Codes", proposes a technique for improving the trade-off between error correction performance and hardware complexity for the List-SD algorithm."</p>
                     </div>
-                
-                </div>
-                </div>
-            </section>
+                  </div>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <!-- Item 02 --> 
+                  <div class="item text-center">
+                    <img src="images/img-2.jpg" alt="testimonial" class="center-block" height="300" width="400">
 
-      </button>
-      
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar"><img src="logos/isip.png" alt="GridCell" width="90" height = "40">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#who_we_are">WHO WE ARE </a></li>
-        <li><a href="#research">RESEARCH</a></li>
-        <li><a href="#team">TEAM</a></li>
-        <li><a href="#sponsors">SPONSORS</a></li>
-        <li><a href="#myCarousel">CONTACT</a></li>
+                    <div class="testimonial-caption" style="padding-bottom: 39px;">
+                      <h2> Gabi's PhD Defense </h2>
+
+                      <p style="padding-bottom: 32x;">"Congratulations to Gabi Sarkis for successfully defending his PhD thesis, <strong><i>Efficient Encoders and Decoders for Polar Codes: Algorithms and Implementations.</i></strong>"" </p>
+                    </div>
+                  </div>
+                  <!-- Item 03 -->
+
+                  <div class="item text-center">
+                    <img src="images/img-2.jpg" alt="testimonial" class="center-block" height="300" width="400">
+
+                    <div class="testimonial-caption" style="padding-bottom: 39px;">
+                      <h2> Gabi's PhD Defense </h2>
+
+                      <p style="padding-bottom: 32x;">"Congratulations to Gabi Sarkis for successfully defending his PhD thesis, <strong><i>Efficient Encoders and Decoders for Polar Codes: Algorithms and Implementations.</i></strong>"" </p>
+                    </div>
+                  </div> 
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+        </button>
+
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar"><img src="logos/isip.png" alt="GridCell" width="90" height = "40">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#who_we_are">WHO WE ARE </a></li>
+          <li><a href="#research">RESEARCH</a></li>
+          <li><a href="#team">TEAM</a></li>
+          <li><a href="#sponsors">SPONSORS</a></li>
+          <li><a href="#myCarousel">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+    <div  class = "container-fluid ">
+    	
+    	<h2> Warren Gross </h2> 
+    	<h4>Professor of the Department of Electrical and Computer Engineering at McGill University  </h4> 
+    	<br> 
+     <p>My primary research interests are in the design and implementation of signal processing systems, and custom computer architectures:
+      <ul>
+        <li>VLSI implementation of signal processing systems</li>
+        <li>Algorithms and architectures for error-correction</li>
+        <li>Stochastic computers</li>
+        <li>Custom computer architectures and reconfigurable computing</li>
+        <li>Associative memories</li>
       </ul>
+    </p>
+
+    <h3>Biography </h3> 
+    <br> 
+    <div class="row">
+
+     <div class="col-sm-2">
+      <img src="warren_gross.jpg" alt="Warren Gross" width="180" height= "220">
+    </div> 
+
+    <div class="col-sm-8">
+     <p> Warren J. Gross received the B.A.Sc. degree in electrical engineering from the University of Waterloo, Waterloo, Ontario, Canada, in 1996, and the M.A.Sc. and Ph.D. degrees from the University of Toronto, Toronto, Ontario, Canada, in 1999 and 2003, respectively. Currently, he is a Professor with the Department of Electrical and Computer Engineering, McGill University, Montréal, Québec, Canada. His research interests are in the design and implementation of signal processing systems and custom computer architectures.</p>
+     <br> 
+     <p>
+       Dr. Gross served as Chair of the IEEE Signal Processing Society Technical Committee on Design and Implementation of Signal Processing Systems. He has served as Technical Program Co-Chair of the IEEE Workshop on Signal Processing Systems (SiPS 2012) and as Chair of the IEEE ICC 2012 Workshop on Emerging Data Storage Technologies. Dr. Gross served as Associate Editor for the IEEE Transactions on Signal Processing and currently is a Senior Area Editor. He has served on the Program Committees of the IEEE Workshop on Signal Processing Systems, the IEEE Symposium on Field-Programmable Custom Computing Machines, the International Conference on Field-Programmable Logic <div id="research">and Applications and as the General Chair of the 6th Annual Analog Decoding Workshop. Dr. Gross is a Senior Member of the IEEE and a licensed Professional Engineer in the Province of Ontario. </div></p> 
+     </div>
+     <div class="col-sm-2	"></div> 
+   </div>
+
+   <br>
+   <br>
+  </div> 
+
+
+  <div  class="container-fluid bg-grey">
+
+   <div class="row">
+     <div class="col-sm-8">
+      <h2>GridCell Biological System Simulator</h2>
+      <h3>About GridCell</h3>
+
+
+      <p>GridCell is a stochastic simulator which divides the simulation space into a 3D cubic grid composed of discrete voxels. The simulation advances through time in discrete time steps. <br>It allows the analysis of biological and chemical networks under multiple spatial influences such as molecular crowding and localization.
+      </div>
+      <div class="col-sm-4">
+       <img src="gridcell.jpg" alt="GridCell" >
+     </div>
+   </p>
+  </div>
+  </div> 
+
+  </div>
+
+
+  <div class="container-fluid ">
+    <div class="row">
+    	<div class="col-sm-4">
+       <h4>Software</h4>
+
+       <p>The latest version of GridCell is v1.2. Check out the change log.<br>
+        GridCell can be downloaded for the Windows XP (and later) platform.
+        <br>
+        <br>
+        The downloadable archive includes:<br>
+      </p>
+
+      <ul>
+        <li>Executable program</li>
+        <li>User manual</li>
+        <li>Sample packages</li>
+        <li>Click here to download GridCell v1.2.</li>
+      </ul> 
     </div>
-</nav>
 
 
+    <div class="col-sm-4">
+      <h4>Requirements</h4>
+      <p>GridCell requires two libraries:</p>
+      <ul>
+       <li>OpenGL Utility Toolkit: GLUT 3.7.6. The .dll and the Object File Library files should be placed in the same directory as the executable.</li>
+       <li>Systems Biology Markup Language (or SBML) library. You must use libSBML version 2.3.4-Xerces.</li>
+     </div>
 
+     <div class="col-sm-4">
+      <h4>User Manual</h4> 
+      <p>GridCell's user interface provides an easy way to interact with the application, through different menus and interactive options.<br>
+        Please refer to the GridCell user manual for more information about its usage.<br>
+        Any correspondence regarding the GridCell application should be directed to: Laurier Boulianne.</p>
 
-<div  class = "container-fluid ">
-	
-	<h2> Warren Gross </h2> 
-	<h4>Professor of the Department of Electrical and Computer Engineering at McGill University  </h4> 
-	<br> 
-   <p>My primary research interests are in the design and implementation of signal processing systems, and custom computer architectures:
-  <ul>
-    <li>VLSI implementation of signal processing systems</li>
-    <li>Algorithms and architectures for error-correction</li>
-    <li>Stochastic computers</li>
-    <li>Custom computer architectures and reconfigurable computing</li>
-    <li>Associative memories</li>
-  </ul>
-  </p>
+      </div> 
+    </div>
+  </div> 
 
-	<h3>Biography </h3> 
-	<br> 
-	<div class="row">
-
-			<div class="col-sm-2">
-			 <img src="warren_gross.jpg" alt="Warren Gross" width="180" height= "220">
-			</div> 
-
-			<div class="col-sm-8">
-			<p> Warren J. Gross received the B.A.Sc. degree in electrical engineering from the University of Waterloo, Waterloo, Ontario, Canada, in 1996, and the M.A.Sc. and Ph.D. degrees from the University of Toronto, Toronto, Ontario, Canada, in 1999 and 2003, respectively. Currently, he is a Professor with the Department of Electrical and Computer Engineering, McGill University, Montréal, Québec, Canada. His research interests are in the design and implementation of signal processing systems and custom computer architectures.</p>
-			<br> 
-	<p>
-	Dr. Gross served as Chair of the IEEE Signal Processing Society Technical Committee on Design and Implementation of Signal Processing Systems. He has served as Technical Program Co-Chair of the IEEE Workshop on Signal Processing Systems (SiPS 2012) and as Chair of the IEEE ICC 2012 Workshop on Emerging Data Storage Technologies. Dr. Gross served as Associate Editor for the IEEE Transactions on Signal Processing and currently is a Senior Area Editor. He has served on the Program Committees of the IEEE Workshop on Signal Processing Systems, the IEEE Symposium on Field-Programmable Custom Computing Machines, the International Conference on Field-Programmable Logic <div id="research">and Applications and as the General Chair of the 6th Annual Analog Decoding Workshop. Dr. Gross is a Senior Member of the IEEE and a licensed Professional Engineer in the Province of Ontario. </div></p> 
-			</div>
-			<div class="col-sm-2	"></div> 
-	</div>
-			
-			<br>
-			<br>
-</div> 
-
-
-<div  class="container-fluid bg-grey">
-
-	<div class="row">
-	<div class="col-sm-8">
-  <h2>GridCell Biological System Simulator</h2>
-  <h3>About GridCell</h3>
- 
-
-  <p>GridCell is a stochastic simulator which divides the simulation space into a 3D cubic grid composed of discrete voxels. The simulation advances through time in discrete time steps. <br>It allows the analysis of biological and chemical networks under multiple spatial influences such as molecular crowding and localization.
-  		</div>
-  		 <div class="col-sm-4">
-  		 	 <img src="gridcell.jpg" alt="GridCell" >
-  		 </div>
-</p>
-</div>
-</div> 
-
-</div>
-
-
-<div class="container-fluid ">
-<div class="row">
-	<div class="col-sm-4">
-	  <h4>Software</h4>
-
-	    <p>The latest version of GridCell is v1.2. Check out the change log.<br>
-		GridCell can be downloaded for the Windows XP (and later) platform.
-		<br>
-		<br>
-		The downloadable archive includes:<br>
-		</p>
-
-		 <ul>
-		  <li>Executable program</li>
-		  <li>User manual</li>
-		  <li>Sample packages</li>
-		  <li>Click here to download GridCell v1.2.</li>
-		</ul> 
-	</div>
-
-
-	<div class="col-sm-4">
-		<h4>Requirements</h4>
-		<p>GridCell requires two libraries:</p>
-		<ul>
-			<li>OpenGL Utility Toolkit: GLUT 3.7.6. The .dll and the Object File Library files should be placed in the same directory as the executable.</li>
-			<li>Systems Biology Markup Language (or SBML) library. You must use libSBML version 2.3.4-Xerces.</li>
-	</div>
-
-	<div class="col-sm-4">
-		<h4>User Manual</h4> 
-		<p>GridCell's user interface provides an easy way to interact with the application, through different menus and interactive options.<br>
-		Please refer to the GridCell user manual for more information about its usage.<br>
-		Any correspondence regarding the GridCell application should be directed to: Laurier Boulianne.</p>
-
-	</div> 
-</div>
-</div> 
-
-<div class="container-fluid bg-grey ">
-	<div class="row">
-		<h2>Related Publications</h2>
+  <div class="container-fluid bg-grey ">
+   <div class="row">
+    <h2>Related Publications</h2>
     <div id = "team"> </div>
-		<div class="col-sm-6">
-			<ul>
-				<li>
-			<strong>L. Boulianne, S. Al Assaad, M. Dumontier, and W. J. Gross, “GridCell: A Stochastic Particle-Based Biological System Simulator”, BMC Systems Biology, vol. 2, no. 1, July 2008, p. 2:66. (doi)</strong></li> </ul>
-		</div> 
-		<div class="col-sm-6">
-			<ul>
-			<li>
-			<strong>L. Boulianne, M. Dumontier, and W. J. Gross, “A Stochastic Particle-Based Biological System Simulator”, Proceedings of SCS/ACM Summer Simulation Conference (SCSC), July 15-18, 2007, pp. 794-801, San Diego, CA, USA. (url)</strong> 
-			</li>
-			</ul>
+    <div class="col-sm-6">
+     <ul>
+      <li>
+       <strong>L. Boulianne, S. Al Assaad, M. Dumontier, and W. J. Gross, “GridCell: A Stochastic Particle-Based Biological System Simulator”, BMC Systems Biology, vol. 2, no. 1, July 2008, p. 2:66. (doi)</strong></li> </ul>
+     </div> 
+     <div class="col-sm-6">
+       <ul>
+         <li>
+           <strong>L. Boulianne, M. Dumontier, and W. J. Gross, “A Stochastic Particle-Based Biological System Simulator”, Proceedings of SCS/ACM Summer Simulation Conference (SCSC), July 15-18, 2007, pp. 794-801, San Diego, CA, USA. (url)</strong> 
+         </li>
+       </ul>
 
-		</div>
-	</div>
-</div>
-
-
-<div class="container-fluid text-center">
-  <h2>Our Team</h2>
-  <h4>Ph.D. Students</h4>
-  <div class="row text-center">
-    <div class="col-sm-2">
-      <div class="thumbnail">
-        <img src="team/mehdi_ahmadi.jpg" alt="Mehdi Ahmadi ">
-        <p><strong>Mehdi Ahmadi</strong></p>
-      </div>
-    </div>
-     <div class="col-sm-2">
-      <div class="thumbnail">
-        <img src="team/arash_ardakani.jpg" alt="Arash Ardakani">
-        <p><strong>Arash Ardakani</strong></p>
-      </div>
-    </div>
-     <div class="col-sm-2">
-      <div class="thumbnail">
-        <img src="team/pascal_giard.jpg" alt="Pascal Giard">
-        <p><strong>Pascal Giard</strong></p>
-      </div>
-    </div>
-     <div class="col-sm-2">
-      <div class="thumbnail">
-        <img src="team/ali_hashemi.jpg" alt="Ali Hashemi">
-        <p><strong>Ali Hashemi</strong></p>
-      </div>
-    </div>
-     <div class="col-sm-2">
-      <div class="thumbnail">
-        <img src="team/francois_leduc-primeau.jpg" alt="Francois Leduc-Primeau" width="220" height="240">
-        <p><strong>Francois Leduc-Primeau</strong></p>
-      </div>
-    </div>
-    <div class="col-sm-2">
-      <div class="thumbnail">
-        <img src="team/gabi_sarkis.jpg" alt="Gabi Sarkis">
-        <p><strong>Gabi Sarkis</strong></p>
-      </div>
-    </div>
-</div>
-</div>
-
-<div id = "sponsors" class="container-fluid text-center bg-grey">
-	  <h2>Sponsors</h2>
-
-	   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-    <li data-target="#myCarousel" data-slide-to="4"></li>
-    <li data-target="#myCarousel" data-slide-to="5"></li>
-    <li data-target="#myCarousel" data-slide-to="6"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <center><img src="logos/nserc.jpg" alt="NSERC" width ="800" height="300"></center>
-      <div class="carousel-caption">
-      </div>
-    </div>
-
-    <div class="item">
-    	<center>
-      <img src="logos/fonds_de_recherche.png" alt="Chicago" width ="800" height="300"></center>
-      <div class="carousel-caption">
-      </div>
-    </div>
-
-    <div class="item">
-    	<center>
-      <img src="logos/compute.jpg" alt="Los Angeles"width ="800" height="300"></center>
-      <div class="carousel-caption">
-      </div>
-    </div>
-
-    <div class="item">
-      <center>
-      <img src="logos/calcul_quebec.jpg" alt="Los Angeles"width ="800" height="300"></center>
-      <div class="carousel-caption">
-      </div>
-    </div>
-
-    <div class="item">
-      <center>
-      <img src="logos/sytacom.png" alt="Los Angeles"width ="800" height="300"></center>
-      <div class="carousel-caption">
-      </div>
-    </div>
-
-    <div class="item">
-      <center>
-      <img src="logos/resmiq.png" alt="Los Angeles"width ="800" height="300"></center>
-      <div class="carousel-caption">
-      </div>
-    </div>
-
-    <div class="item">
-      <center>
-      <img src="logos/cmc.gif" alt="Los Angeles"width ="800" height="300"></center>
-      <div class="carousel-caption">
-      </div>
-    </div>
-
-
+     </div>
+   </div>
   </div>
 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 
+  <div class="container-fluid text-center">
+    <h2>Our Team</h2>
+    <h4>Ph.D. Students</h4>
+    <div class="row text-center">
+      <div class="col-sm-2">
+        <div class="thumbnail">
+          <img src="team/mehdi_ahmadi.jpg" alt="Mehdi Ahmadi ">
+          <p><strong>Mehdi Ahmadi</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="thumbnail">
+          <img src="team/arash_ardakani.jpg" alt="Arash Ardakani">
+          <p><strong>Arash Ardakani</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="thumbnail">
+          <img src="team/pascal_giard.jpg" alt="Pascal Giard">
+          <p><strong>Pascal Giard</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="thumbnail">
+          <img src="team/ali_hashemi.jpg" alt="Ali Hashemi">
+          <p><strong>Ali Hashemi</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="thumbnail">
+          <img src="team/francois_leduc-primeau.jpg" alt="Francois Leduc-Primeau" width="220" height="240">
+          <p><strong>Francois Leduc-Primeau</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="thumbnail">
+          <img src="team/gabi_sarkis.jpg" alt="Gabi Sarkis">
+          <p><strong>Gabi Sarkis</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div id = "sponsors" class="container-fluid text-center bg-grey">
+   <h2>Sponsors</h2>
 
-</div>
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+    </ol>
 
-	</div>
-
-   <div class="container">
-  <h3 class="text-center">Contact</h3>
-  <div class="row test">
-    <div class="col-md-3">
-      <p><span class="glyphicon glyphicon-map-marker"></span><strong> Office Address</strong>
-        <br> McConnell Engineering Building, Room 505<br> 
-        Department of Electrical and Computer Engineering<br>
-        McGill University<br> 
-        3480 University Street<br>
-        Montréal, Québec<br>
-        Canada<br>
-      </p>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <center><img src="logos/nserc.jpg" alt="NSERC" width ="800" height="300"></center>
+        <div class="carousel-caption">
+        </div>
       </div>
 
-      <div class="col-md-3">
-      <p><span class="glyphicon glyphicon-map-marker"></span><strong> Mailing Address</strong>
-        <br> McConnell Engineering Building, Room 633<br> 
-        Department of Electrical and Computer Engineering<br>
-        McGill University<br> 
-        3480 University Street<br>
-        Montréal, Québec<br>
-        Canada, H3A 0E9<br>
+      <div class="item">
+       <center>
+        <img src="logos/fonds_de_recherche.png" alt="Chicago" width ="800" height="300"></center>
+        <div class="carousel-caption">
+        </div>
+      </div>
 
-      </p>
+      <div class="item">
+       <center>
+        <img src="logos/compute.jpg" alt="Los Angeles"width ="800" height="300"></center>
+        <div class="carousel-caption">
+        </div>
+      </div>
+
+      <div class="item">
+        <center>
+          <img src="logos/calcul_quebec.jpg" alt="Los Angeles"width ="800" height="300"></center>
+          <div class="carousel-caption">
+          </div>
+        </div>
+
+        <div class="item">
+          <center>
+            <img src="logos/sytacom.png" alt="Los Angeles"width ="800" height="300"></center>
+            <div class="carousel-caption">
+            </div>
+          </div>
+
+          <div class="item">
+            <center>
+              <img src="logos/resmiq.png" alt="Los Angeles"width ="800" height="300"></center>
+              <div class="carousel-caption">
+              </div>
+            </div>
+
+            <div class="item">
+              <center>
+                <img src="logos/cmc.gif" alt="Los Angeles"width ="800" height="300"></center>
+                <div class="carousel-caption">
+                </div>
+              </div>
+
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+
+
+          </div>
+
+        </div>
+
+        <div class="container">
+          <h3 class="text-center">Contact</h3>
+          <div class="row test">
+            <div class="col-md-3">
+              <p><span class="glyphicon glyphicon-map-marker"></span><strong> Office Address</strong>
+                <br> McConnell Engineering Building, Room 505<br> 
+                Department of Electrical and Computer Engineering<br>
+                McGill University<br> 
+                3480 University Street<br>
+                Montréal, Québec<br>
+                Canada<br>
+              </p>
+            </div>
+
+            <div class="col-md-3">
+              <p><span class="glyphicon glyphicon-map-marker"></span><strong> Mailing Address</strong>
+                <br> McConnell Engineering Building, Room 633<br> 
+                Department of Electrical and Computer Engineering<br>
+                McGill University<br> 
+                3480 University Street<br>
+                Montréal, Québec<br>
+                Canada, H3A 0E9<br>
+
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div id="googleMap" style="width:500px;height:380px;"></div>
+           </div>
+         </div>
+
+
+         <div class="col-md-4">
+          <p><span class="glyphicon glyphicon-phone"></span>Phone: (+1) 514 398-2812 </p>
+          <p><span class="glyphicon glyphicon-envelope"></span>Email: warren.gross@mcgill.ca</p>
+         </div>
+      </div>
+
     </div>
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Bx Slider JS -->
+    <script src="js/jquery.bxslider.min.js"></script>
+
+    <!-- Add JS counter lib -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <!-- Add wow js lib -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Js -->
+    <script src="js/custom.js"></script>
     
-    <div class="col-md-6">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <button class="btn pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: (+1) 514 398-2812 </p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: warren.gross@mcgill.ca</p>
-    </div>
-  </div>
-</div>
-
-
-
-
- <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        
-        <!-- Bx Slider JS -->
-        <script src="js/jquery.bxslider.min.js"></script>
-        
-        <!-- Add JS counter lib -->
-        <script src="js/jquery.waypoints.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        
-        <!-- Add wow js lib -->
-        <script src="js/wow.min.js"></script>
-      
-        <!-- Custom Js -->
-        <script src="js/custom.js"></script>
-</body>
-</html>
+  </body>
+  </html>
 
